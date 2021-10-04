@@ -24,8 +24,8 @@ class VNDB:
         except Exception as e:
             lg.error(e)
         self._login(
-            login_command='login {"protocol":1,"client":"bonjourlee","clientver":0.1,"username":"bonjourlee",'
-                          '"password":"592441537"}')
+            login_command='login {"protocol":1,"client":"test","clientver":0.1,"username":"ayo",'
+                          '"password":"hi-mi-tsu!"}')
         res = self._get_response()
         if res != "ok":
             raise Exception("Not able to login")
